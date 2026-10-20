@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kenali Masjid Agung Kota Kediri: sejarah, arsitektur, fasilitas, kajian Ahad pagi, dan kegiatan remaja masjid.">
+  <title>Masjid Agung Kota Kediri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #123f35;
+      --green-2: #1b5a49;
+      --gold: #d6b66f;
+      --cream: #f7f5ee;
+      --ink: #1e2b26;
+      --muted: #68756e;
+      --white: #fff;
+      --shadow: 0 18px 50px rgba(18, 63, 53, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", sans-serif; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(247,245,238,.94); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(18,63,53,.09); }
+    .nav { display: flex; justify-content: space-between; align-items: center; min-height: 76px; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--green); letter-spacing: -.3px; }
+    .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px 14px 14px 4px; color: var(--green); background: #e9dfc4; font-size: 22px; }
+    .nav-links { display: flex; gap: 27px; align-items: center; font-size: 14px; font-weight: 600; color: #42564d; }
+    .nav-links a:hover { color: #b08c3d; }
+    .nav-cta { padding: 11px 17px; background: var(--green); color: white !important; border-radius: 999px; }
+    .hero { position: relative; min-height: 650px; display: flex; align-items: center; overflow: hidden; color: white; background: var(--green); }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,35,29,.88) 0%, rgba(8,35,29,.62) 47%, rgba(8,35,29,.15) 100%), url("masjid-agung-kediri.png") center 45%/cover no-repeat; transform: scale(1.02); }
+    .hero::after { content: ""; position: absolute; width: 450px; height: 450px; right: -170px; top: -180px; border: 1px solid rgba(214,182,111,.36); border-radius: 50%; box-shadow: 0 0 0 35px rgba(214,182,111,.05), 0 0 0 75px rgba(214,182,111,.04); }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; padding: 100px 0 112px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--gold); text-transform: uppercase; letter-spacing: 2.6px; font-size: 11px; font-weight: 700; }
+    .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold); }
+    h1, h2, h3 { line-height: 1.18; margin: 0; }
+    h1 { font: 700 clamp(42px, 6.4vw, 76px)/1.08 "Playfair Display", serif; letter-spacing: -1.5px; margin: 22px 0; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 560px; color: rgba(255,255,255,.82); font-size: 17px; margin: 0 0 30px; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; padding: 13px 21px; font-weight: 700; font-size: 14px; transition: .2s ease; }
+    .btn-gold { background: var(--gold); color: #172f27; }
+    .btn-gold:hover { background: #e5c983; transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.48); color: white; }
+    .btn-outline:hover { background: rgba(255,255,255,.12); }
+    .hero-note { position: absolute; z-index: 1; bottom: 24px; right: max(20px, calc((100% - 1120px)/2)); color: rgba(255,255,255,.72); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+    .quick-info { position: relative; z-index: 2; margin-top: -44px; }
+    .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); background: white; border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+    .info-item { padding: 27px 30px; display: flex; align-items: center; gap: 15px; }
+    .info-item + .info-item { border-left: 1px solid #e9ece5; }
+    .info-icon { flex: 0 0 46px; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 15px; background: #f2eedf; color: var(--green); font-size: 21px; }
+    .info-item small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+    .info-item strong { display: block; font-size: 14px; line-height: 1.4; }
+    section { padding: 100px 0; }
+    .section-head { max-width: 650px; margin-bottom: 42px; }
+    .section-head .eyebrow { color: #9b7937; }
+    .section-head .eyebrow::before { background: #9b7937; }
+    h2 { font: 700 clamp(32px, 4vw, 47px)/1.16 "Playfair Display", serif; color: var(--green); margin: 15px 0 17px; letter-spacing: -.6px; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .about-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 65px; align-items: center; }
+    .about-photo { min-height: 470px; position: relative; }
+    .about-photo img { width: 100%; height: 470px; object-fit: cover; border-radius: 22px; display: block; box-shadow: var(--shadow); }
+    .photo-tag { position: absolute; bottom: -18px; right: -18px; max-width: 220px; padding: 19px 22px; border-radius: 16px; background: var(--green); color: white; box-shadow: var(--shadow); }
+    .photo-tag strong { display: block; color: var(--gold); font: 700 29px "Playfair Display", serif; }
+    .photo-tag span { font-size: 12px; color: rgba(255,255,255,.78); }
+    .about-copy p { color: var(--muted); margin: 0 0 17px; }
+    .highlight { margin-top: 25px; padding: 18px 20px; border-left: 3px solid var(--gold); background: #eeecdf; border-radius: 0 12px 12px 0; color: #46574d; font-size: 14px; }
+    .architecture { background: #eaece3; }
+    .architecture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .feature-card { padding: 28px; border-radius: 18px; background: rgba(255,255,255,.78); border: 1px solid rgba(18,63,53,.06); transition: transform .2s, box-shadow .2s; }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .feature-number { font: 700 35px "Playfair Display", serif; color: #b39551; margin-bottom: 18px; }
+    .feature-card h3 { color: var(--green); font-size: 18px; margin-bottom: 10px; }
+    .feature-card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .facilities-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .facility { padding: 25px 22px; border-radius: 16px; background: white; border: 1px solid #ecece4; }
+    .facility-icon { font-size: 26px; margin-bottom: 16px; }
+    .facility h3 { color: var(--green); font-size: 16px; margin-bottom: 8px; }
+    .facility p { color: var(--muted); font-size: 13px; margin: 0; }
+    .activities { color: white; background: var(--green); position: relative; overflow: hidden; }
+    .activities::before { content: "۞"; position: absolute; right: -30px; top: -150px; color: rgba(255,255,255,.035); font-size: 460px; line-height: 1; }
+    .activities .section-head { position: relative; z-index: 1; }
+    .activities h2 { color: white; }
+    .activities .section-head p { color: rgba(255,255,255,.68); }
+    .activities .eyebrow { color: var(--gold); }
+    .activities .eyebrow::before { background: var(--gold); }
+    .activity-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .activity-card { padding: 31px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.06); border-radius: 18px; }
+    .activity-top { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+    .activity-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 16px; background: rgba(214,182,111,.16); font-size: 25px; }
+    .activity-card h3 { font: 700 23px "Playfair Display", serif; }
+    .activity-card p { color: rgba(255,255,255,.72); font-size: 14px; margin: 0 0 20px; }
+    .pill { display: inline-block; color: var(--gold); border: 1px solid rgba(214,182,111,.4); border-radius: 999px; padding: 6px 11px; font-size: 11px; font-weight: 700; letter-spacing: .3px; }
+    .visit-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 50px; align-items: start; }
+    .address-box { background: white; padding: 30px; border-radius: 18px; box-shadow: var(--shadow); }
+    .address-box h3 { color: var(--green); margin-bottom: 10px; }
+    .address-box p { color: var(--muted); margin: 0 0 22px; font-size: 14px; }
+    .social { display: flex; align-items: center; gap: 13px; padding-top: 20px; border-top: 1px solid #e9ece5; }
+    .social-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: #f5e8df; font-size: 22px; }
+    .social small { display: block; color: var(--muted); font-size: 12px; }
+    .social strong { color: var(--green); }
+    .quote { padding: 34px; border-radius: 18px; background: #e9e3d0; }
+    .quote-mark { color: #b39551; font: 700 60px "Playfair Display", serif; height: 45px; }
+    .quote p { color: var(--green); font: 600 22px/1.5 "Playfair Display", serif; margin: 10px 0 15px; }
+    .quote small { color: var(--muted); }
+    footer { padding: 27px 0; background: #0c3028; color: rgba(255,255,255,.65); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .footer-inner strong { color: white; }
+    .back-top { color: var(--gold); }
+    @media (max-width: 900px) {
+      .nav-links { gap: 14px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .about-grid, .visit-grid { grid-template-columns: 1fr; gap: 45px; }
+      .about-photo { max-width: 650px; }
+      .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+      .info-item { padding: 22px 17px; }
+      .info-icon { display: none; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 30px, 1120px); }
+      .nav { min-height: 68px; }
+      .brand { font-size: 13px; }
+      .brand-mark { width: 36px; height: 36px; }
+      .nav-cta { padding: 9px 12px; font-size: 12px; }
+      .hero { min-height: 610px; }
+      .hero::before { background: linear-gradient(90deg, rgba(8,35,29,.88), rgba(8,35,29,.48)), url("masjid-agung-kediri.png") 56% center/cover no-repeat; }
+      .hero-content { padding: 80px 0 90px; }
+      .hero p { font-size: 15px; }
+      .hero-note { display: none; }
+      .info-grid { grid-template-columns: 1fr; }
+      .info-item { padding: 17px 22px; }
+      .info-item + .info-item { border-left: 0; border-top: 1px solid #e9ece5; }
+      .info-icon { display: grid; }
+      section { padding: 72px 0; }
+      .about-photo, .about-photo img { min-height: 330px; height: 330px; }
+      .photo-tag { right: -5px; bottom: -16px; }
+      .architecture-grid, .activity-grid { grid-template-columns: 1fr; }
+      .facilities-grid { gap: 10px; }
+      .facility { padding: 19px 15px; }
+      .facility h3 { font-size: 14px; }
+      .activity-card { padding: 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#beranda" aria-label="Masjid Agung Kota Kediri - Beranda">
+        <span class="brand-mark">☪</span><span>MASJID AGUNG<br><small style="font-weight:500;color:#718078">KOTA KEDIRI</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#sejarah">Sejarah</a>
+        <a href="#arsitektur">Keistimewaan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a class="nav-cta" href="#kunjungi">Kunjungi kami ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Ikon religi Kota Kediri</div>
+          <h1>Rumah Ibadah,<br><span>Ruang Kebersamaan.</span></h1>
+          <p>Mengenal Masjid Agung Kota Kediri, tempat beribadah yang menyimpan sejarah panjang, keindahan arsitektur, dan semangat kebersamaan umat.</p>
+          <div class="buttons">
+            <a class="btn btn-gold" href="#sejarah">Jelajahi masjid <span>↓</span></a>
+            <a class="btn btn-outline" href="#kegiatan">Lihat kegiatan</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-note">Masjid Agung · Kota Kediri · Jawa Timur</div>
+    </section>
+
+    <div class="container quick-info" aria-label="Informasi singkat">
+      <div class="info-grid">
+        <div class="info-item"><div class="info-icon">⌖</div><div><small>Lokasi</small><strong>Jalan Panglima Sudirman No. 160</strong></div></div>
+        <div class="info-item"><div class="info-icon">◷</div><div><small>Awal berdiri</small><strong>Tahun 1771</strong></div></div>
+        <div class="info-item"><div class="info-icon">☪</div><div><small>Peran masjid</small><strong>Ibadah, dakwah, dan kebersamaan</strong></div></div>
+      </div>
+    </div>
+
+    <section id="sejarah">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="masjid-agung-kediri.png" alt="Bangunan Masjid Agung Kota Kediri dengan menara dan kubah">
+          <div class="photo-tag"><strong>1771</strong><span>Tahun pertama kali didirikan</span></div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">Jejak sejarah</div>
+          <h2>Warisan sejarah di jantung Kota Kediri</h2>
+          <p>Masjid Agung Kota Kediri pertama kali didirikan pada tahun 1771. Masjid ini dikenal sebagai masjid terbesar dan termegah di Kota Kediri. Pada masa lalu, masjid ini disebut Masjid Jami' Kediri.</p>
+          <p>Seiring berjalannya waktu, bangunan masjid telah mengalami renovasi berulang kali. Namun, mimbar masjid hanya direnovasi sekali untuk menjaga keasliannya sebagai bagian dari warisan sejarah.</p>
+          <div class="highlight">Lebih dari tempat beribadah, masjid ini menjadi ruang untuk menimba ilmu, mempererat silaturahmi, dan menjaga tradisi keislaman masyarakat.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture" id="arsitektur">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Detail yang memikat</div>
+          <h2>Perpaduan arsitektur dan tradisi</h2>
+          <p>Karakter bangunan Masjid Agung Kota Kediri memadukan unsur arsitektur masjid dengan sentuhan khas Jawa.</p>
+        </div>
+        <div class="architecture-grid">
+          <article class="feature-card"><div class="feature-number">01</div><h3>Kubah setinggi 49 meter</h3><p>Kubah menjadi salah satu elemen yang menonjol dan mudah dikenali dari bangunan masjid.</p></article>
+          <article class="feature-card"><div class="feature-number">02</div><h3>Tiga lantai dan banyak pilar</h3><p>Bangunan memiliki tiga lantai dengan deretan pilar di area serambi yang memberi kesan megah.</p></article>
+          <article class="feature-card"><div class="feature-number">03</div><h3>Atap joglo dan warna khas</h3><p>Atap bergaya joglo mencerminkan tradisi Jawa, dilengkapi kubah berwarna hijau kebiru-biruan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fasilitas">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Kenyamanan jamaah</div>
+          <h2>Fasilitas masjid</h2>
+          <p>Berikut contoh fasilitas yang umumnya tersedia untuk mendukung kegiatan ibadah dan kunjungan jamaah. Ketersediaan fasilitas tertentu dapat berubah.</p>
+        </div>
+        <div class="facilities-grid">
+          <article class="facility"><div class="facility-icon">🕌</div><h3>Ruang salat</h3><p>Area ibadah untuk jamaah melaksanakan salat berjamaah.</p></article>
+          <article class="facility"><div class="facility-icon">💧</div><h3>Tempat wudu</h3><p>Area bersuci sebelum melaksanakan ibadah.</p></article>
+          <article class="facility"><div class="facility-icon">🚻</div><h3>Toilet</h3><p>Fasilitas sanitasi untuk kebutuhan jamaah dan pengunjung.</p></article>
+          <article class="facility"><div class="facility-icon">📚</div><h3>Area kajian</h3><p>Ruang untuk mengikuti ceramah, kajian, dan kegiatan keagamaan.</p></article>
+          <article class="facility"><div class="facility-icon">👞</div><h3>Area penitipan alas kaki</h3><p>Tempat menata alas kaki agar area ibadah tetap rapi.</p></article>
+          <article class="facility"><div class="facility-icon">🧹</div><h3>Area serambi</h3><p>Area tambahan untuk berkumpul atau menunggu sebelum kegiatan.</p></article>
+          <article class="facility"><div class="facility-icon">🅿️</div><h3>Area parkir</h3><p>Tempat parkir bagi jamaah, sesuai ketersediaan dan pengaturan setempat.</p></article>
+          <article class="facility"><div class="facility-icon">🤝</div><h3>Ruang kegiatan</h3><p>Tempat pendukung aktivitas sosial dan kegiatan komunitas masjid.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="activities" id="kegiatan">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Aktif dan terbuka</div>
+          <h2>Kegiatan yang menghidupkan masjid</h2>
+          <p>Masjid bukan hanya tempat salat, tetapi juga tempat belajar, berbagi ilmu, dan tumbuh bersama sebagai komunitas.</p>
+        </div>
+        <div class="activity-grid">
+          <article class="activity-card">
+            <div class="activity-top"><div class="activity-icon">🎙️</div><h3>Ceramah Ahad pagi</h3></div>
+            <p>Setiap minggu pagi diadakan ceramah atau kajian yang diisi oleh ustaz yang berbeda-beda. Kegiatan ini menjadi kesempatan bagi jamaah untuk menambah wawasan keislaman dan mempererat silaturahmi.</p>
+            <span class="pill">Setiap minggu pagi</span>
+          </article>
+          <article class="activity-card">
+            <div class="activity-top"><div class="activity-icon">🌱</div><h3>Remaja masjid</h3></div>
+            <p>Remaja masjid menjadi wadah bagi generasi muda untuk terlibat dalam kegiatan positif, belajar berorganisasi, memperkuat nilai keagamaan, serta membantu kegiatan sosial dan kemasyarakatan.</p>
+            <span class="pill">Belajar · Berkarya · Mengabdi</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kunjungi">
+      <div class="container visit-grid">
+        <div>
+          <div class="eyebrow">Silakan berkunjung</div>
+          <h2>Temukan kami di Kota Kediri</h2>
+          <p style="color:var(--muted);max-width:520px">Mari berkunjung untuk beribadah, mengikuti kegiatan keagamaan, atau mengenal salah satu bangunan bersejarah di Kota Kediri.</p>
+          <div class="buttons" style="margin-top:25px">
+            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=Masjid+Agung+Kota+Kediri" target="_blank" rel="noopener noreferrer">Buka petunjuk lokasi ↗</a>
+          </div>
+        </div>
+        <aside class="address-box">
+          <h3>Alamat</h3>
+          <p>Jalan Panglima Sudirman, No. 160, Kota Kediri, Jawa Timur.</p>
+          <div class="social">
+            <div class="social-icon">◎</div>
+            <div><small>Instagram</small><strong>@masjidagungkotakediri</strong></div>
+          </div>
+          <a class="btn btn-outline" style="color:var(--green);border-color:#cbd6ce;margin-top:20px" href="https://www.instagram.com/masjidagungkotakediri/" target="_blank" rel="noopener noreferrer">Kunjungi Instagram ↗</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>Masjid Agung Kota Kediri</strong> · Jawa Timur</div>
+      <div>Website informasi · Dibuat dengan hormat untuk rumah ibadah dan masyarakat.</div>
+      <a class="back-top" href="#beranda">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
